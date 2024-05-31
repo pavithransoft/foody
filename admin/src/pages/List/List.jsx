@@ -5,10 +5,6 @@ import { toast } from "react-toastify";
 import PropTypes from "prop-types";
 
 const List = ({ url }) => {
-  List.propTypes = {
-    url: PropTypes.string.isRequired,
-  };
-
   const [list, setList] = useState([]);
 
   const fetchList = async () => {
@@ -61,6 +57,10 @@ const List = ({ url }) => {
       </div>
     </div>
   );
+};
+
+List.propTypes = {
+  url: PropTypes.string.isRequired,
 };
 
 export default List;

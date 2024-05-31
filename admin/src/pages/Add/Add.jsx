@@ -6,10 +6,6 @@ import { toast } from "react-toastify";
 import PropTypes from "prop-types";
 
 const Add = ({ url }) => {
-  Add.propTypes = {
-    url: PropTypes.string.isRequired,
-  };
-
   const [image, setImage] = useState(false);
   const [data, setData] = useState({
     name: "",
@@ -116,6 +112,10 @@ const Add = ({ url }) => {
       </form>
     </div>
   );
+};
+
+Add.propTypes = {
+  url: PropTypes.string.isRequired,
 };
 
 export default Add;
