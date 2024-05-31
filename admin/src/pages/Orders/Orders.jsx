@@ -1,23 +1,22 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import "./Orders.css";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { useEffect } from "react";
-import { assets } from "./../../assets/assets";
 import PropTypes from "prop-types";
+import { FaBox } from "react-icons/fa";
 
 const Orders = ({ url }) => {
   const [orders, setOrders] = useState([]);
 
-  const fetchAllOrders = async () => {
+  const fetchAllOrders = useCallback(async () => {
     const response = await axios.get(url + "/api/order/list");
     if (response.data.success) {
       setOrders(response.data.data);
-      console.log(response.data.data);
     } else {
       toast.error("Error");
     }
-  };
+  }, [url]);
 
   const statusHandler = async (event, orderId) => {
     const response = await axios.post(url + "/api/order/status", {
@@ -31,15 +30,15 @@ const Orders = ({ url }) => {
 
   useEffect(() => {
     fetchAllOrders();
-  }, []);
+  }, [fetchAllOrders]);
 
   return (
     <div className="order add">
-      <h2>Order Page</h2>
+      <h2 className="heading">Order Page</h2>
       <div className="order-list">
         {orders.map((order, index) => (
           <div key={index} className="order-item">
-            <img src={assets.parcel_icon} alt="" />
+            <FaBox className="order-item-icon" />
             <div>
               <p className="order-item-food">
                 {order.items.map((item, index) => {
@@ -67,8 +66,11 @@ const Orders = ({ url }) => {
               </div>
               <p className="order-item-phone">{order.address.phone}</p>
             </div>
-            <p>Items:{order.items.length}</p>
-            <p>${order.amount}</p>
+            <p>Items: {order.items.length}</p>
+            <p>
+              <span className="dollar">$</span>
+              {order.amount}
+            </p>
             <select
               onChange={(event) => statusHandler(event, order._id)}
               value={order.status}

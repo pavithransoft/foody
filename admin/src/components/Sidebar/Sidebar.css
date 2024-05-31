@@ -1,7 +1,6 @@
 .sidebar {
   width: 18%;
   min-height: 100vh;
-  border: 1.5px solid #a9a9a9;
   border-top: 0;
   font-size: max(1vw, 10px);
 }
@@ -16,16 +15,23 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  border: 1px solid #a9a9a9;
   border-right: 0;
   padding: 8px 10px;
   border-radius: 3px 0px 0px 3px;
   cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 .sidebar-option.active {
-  background-color: #fff0ed;
-  border-color: tomato;
+  background-color: black;
+  color: tomato;
+  border-color: rgb(143, 116, 78);
+}
+
+.sidebar-option-icon {
+  width: 36px;
+  height: 36px;
 }
 
 @media (max-width: 900px) {

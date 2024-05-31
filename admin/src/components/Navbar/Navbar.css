@@ -3,12 +3,23 @@
   justify-content: space-between;
   align-items: center;
   padding: 8px 4%;
+  background-color: black;
 }
 
-.navbar .logo {
-  width: max(10%, 80px);
+.logo {
+  color: tomato;
+  display: flex;
+  gap: 10px;
+  font-size: small;
 }
 
+.logo-icon {
+  width: 36px;
+  height: 36px;
+}
 .navbar .profile {
   width: 40px;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 1px;
 }

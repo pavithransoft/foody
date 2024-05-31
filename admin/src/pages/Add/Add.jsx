@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { assets } from "../../assets/assets";
 import "./Add.css";
 import axios from "axios";
@@ -20,9 +20,9 @@ const Add = ({ url }) => {
     setData((data) => ({ ...data, [name]: value }));
   };
 
-  useEffect(() => {
-    console.log(data);
-  }, [data]);
+  // useEffect(() => {
+  //   console.log(data);
+  // }, [data]);
 
   const onSubmitHandler = async (event) => {
     event.preventDefault();

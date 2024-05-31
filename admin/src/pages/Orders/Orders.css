@@ -1,15 +1,19 @@
 .order-item {
   display: grid;
   grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
-  align-items: start;
+  align-items: center;
   gap: 30px;
-  border: 1px solid tomato;
+  border: 1px solid black;
   padding: 20px;
   margin: 30px 0px;
   font-size: 14px;
   color: #505050;
 }
 
+.order-item:hover {
+  background-color: black;
+  color: white;
+}
 .order-item-food,
 .order-item-name {
   font-weight: 600;
@@ -25,11 +29,34 @@
 }
 
 .order-item select {
-  background-color: #ffe8e4;
-  border: 1px solid tomato;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
   width: max(10vw, 120px);
   padding: 10px;
   outline: none;
+}
+.order-item select:hover {
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+}
+.order-item-icon {
+  width: 50px;
+  height: 50px;
+  color: rgb(143, 116, 78);
+}
+
+.heading {
+  color: tomato;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.dollar {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 3px;
 }
 
 @media (max-width: 1000px) {

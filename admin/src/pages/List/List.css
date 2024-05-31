@@ -7,9 +7,13 @@
   border: 1px solid #cacaca;
   font-size: 13px;
 }
+.list-table-format:hover {
+  background-color: black;
+  color: white;
+}
 
 .list-table-format.title {
-  background-color: #f9f9f9;
+  background-color: black;
 }
 
 .list-table-format img {
@@ -28,4 +32,15 @@
 
 .cursor {
   cursor: pointer;
+  font-size: 20px;
+}
+.dollar {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 2px;
+}
+.heading {
+  color: tomato;
+  font-size: 22px;
+  font-weight: normal;
 }
