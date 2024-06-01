@@ -25,9 +25,11 @@
   align-items: center;
   color: black;
 }
-.login-popup-title img {
-  width: 16px;
+.login-popup-title p {
+  font-size: large;
+  font-weight: bold;
   cursor: pointer;
+  color: tomato;
 }
 .login-popup-inputs {
   display: flex;

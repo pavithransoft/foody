@@ -1,8 +1,9 @@
 import { useContext } from "react";
 import "./FoodItem.css";
-import { assets } from "../../assets/assets";
 import { StoreContext } from "../../context/StoreContext";
 import PropTypes from "prop-types";
+import { CiCirclePlus, CiCircleMinus } from "react-icons/ci";
+import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 
 const FoodItem = ({ id, name, price, description, image }) => {
   const { cartItems, addToCart, removeFromCart, url } =
@@ -17,35 +18,33 @@ const FoodItem = ({ id, name, price, description, image }) => {
           alt=" "
         />
         {!cartItems[id] ? (
-          <img
-            onClick={() => addToCart(id)}
-            src={assets.add_icon_white}
-            alt=""
-            className="add"
-          />
+          <CiCirclePlus onClick={() => addToCart(id)} className="add" />
         ) : (
           <div className="food-item-counter">
-            <img
+            <CiCircleMinus
               onClick={() => removeFromCart(id)}
-              src={assets.remove_icon_red}
-              alt=""
+              className="qua-dec"
             />
             <p>{cartItems[id]}</p>
-            <img
-              onClick={() => addToCart(id)}
-              src={assets.add_icon_green}
-              alt=""
-            />
+            <CiCirclePlus onClick={() => addToCart(id)} className="qua-inc" />
           </div>
         )}
       </div>
       <div className="food-item-info">
         <div className="food-item-name-rating">
           <p>{name}</p>
-          <img src={assets.rating_starts} alt="" />
+          <div className="ratting-star">
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStarHalfAlt />
+            <FaRegStar />
+          </div>
         </div>
         <p className="food-item-desc">{description}</p>
-        <p className="food-item-price">${price}</p>
+        <p className="food-item-price">
+          <span className="dollar">$</span> {price}
+        </p>
       </div>
     </div>
   );

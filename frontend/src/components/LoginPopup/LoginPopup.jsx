@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./LoginPopup.css";
-import { assets } from "../../assets/assets";
 import { useContext } from "react";
 import { StoreContext } from "../../context/StoreContext";
 import axios from "axios";
@@ -49,11 +48,7 @@ const LoginPopup = ({ setShowLogin }) => {
       <form onSubmit={onLogin} className="login-popup-container">
         <div className="login-popup-title">
           <h2>{currState}</h2>
-          <img
-            onClick={() => setShowLogin(false)}
-            src={assets.cross_icon}
-            alt=""
-          />
+          <p onClick={() => setShowLogin(false)}>X</p>
         </div>
         <div className="login-popup-inputs">
           {currState === "Login" ? (

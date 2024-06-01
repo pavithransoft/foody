@@ -1,22 +1,29 @@
 import "./Footer.css";
-import { assets } from "../../assets/assets";
+import { IoRestaurantOutline } from "react-icons/io5";
+import { CiFacebook, CiTwitter, CiLinkedin } from "react-icons/ci";
 
 const Footer = () => {
   return (
     <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-content-left">
-          <img src={assets.logo} alt="" />
+          <div className="logo">
+            <IoRestaurantOutline className="logo-icon" />
+            <h1>Foody</h1>
+          </div>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error sint
-            cupiditate nesciunt. Eum ducimus non quaerat fugiat, impedit tempore
-            at fuga iure eveniet dignissimos beatae ut, in tempora voluptatibus
-            enim.
+            Indulge in culinary delight at Foody, where every bite tells a
+            story. From artisanal cheeses to freshly baked bread, our curated
+            selection tantalizes taste buds. Explore global flavors or savor
+            local specialties, all sourced with care for quality and freshness.
+            Whether you're a gourmet enthusiast or a casual foodie, our shop is
+            a haven for gastronomic adventures. Come, experience a symphony of
+            flavors at Foody.
           </p>
-          <div className="footer-social-icons">
-            <img src={assets.facebook_icon} alt="" />
-            <img src={assets.twitter_icon} alt="" />
-            <img src={assets.linkedin_icon} alt="" />
+          <div className="footer-social">
+            <CiFacebook className="social-icons" />
+            <CiTwitter className="social-icons" />
+            <CiLinkedin className="social-icons" />
           </div>
         </div>
         <div className="footer-content-center">
@@ -31,14 +38,14 @@ const Footer = () => {
         <div className="footer-content-right">
           <h2>GET IN TOUCH</h2>
           <ul>
-            <li>+1-212-456-7890</li>
-            <li>contact@tomato.com</li>
+            <li>+1-123-456-7890</li>
+            <li>contact@foody.com</li>
           </ul>
         </div>
       </div>
       <hr />
       <p className="footer-copyright">
-        Copyright 2024 &copy; Tomato.com - All Right Reserved
+        Copyright 2024 &copy; foody.com - All Right Reserved
       </p>
     </div>
   );
