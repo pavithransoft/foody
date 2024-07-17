@@ -8,12 +8,12 @@
   font-size: 13px;
 }
 .list-table-format:hover {
-  background-color: black;
+  background-color: rgb(71 85 105);
   color: white;
 }
 
 .list-table-format.title {
-  background-color: black;
+  background-color: rgb(15 23 42);
 }
 
 .list-table-format img {
