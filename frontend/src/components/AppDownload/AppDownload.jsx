@@ -6,14 +6,14 @@ const AppDownload = () => {
   return (
     <div className="app-download" id="app-download">
       <p>
-        For Better Experience Download <br />
-        <span className="app-name">Foody</span> App
+        For Better Experience Download
+        <span className="app-name"> Foody </span>App
       </p>
       <div className="app-download-platform">
         <div className="app-store">
           <FaGooglePlay className="app-icon" />
           <div>
-            <p className="app-p">GET IT ON</p>
+            <p className="app-p">Get it on</p>
             <p className="app-text">Google Play</p>
           </div>
         </div>

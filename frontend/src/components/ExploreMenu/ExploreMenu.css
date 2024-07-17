@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: black;
+  background-color: white;
   color: white;
   padding: 20px;
 }
 .explore-menu h1 {
-  color: white;
+  color: black;
   font-weight: 500;
 }
 .explore-menu-text {

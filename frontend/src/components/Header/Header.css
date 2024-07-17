@@ -28,13 +28,13 @@
 }
 .header-contents button {
   border: none;
-  color: #747474;
+  color: #49557e;
   font-weight: 500;
   padding: 1vw 2.3vw;
-  background-color: black;
+  background-color: #fff4f2;
   font-size: max(1vw, 13px);
   border-radius: 50px;
-  border: 1px solid #747474;
+  cursor: pointer;
 }
 @media (max-width: 1050px) {
   .header-contents {

@@ -1,9 +1,9 @@
 .app-download {
   margin: auto auto;
   margin-top: 100px;
-  font-size: max(3vw, 20px);
+  font-size: max(2vw, 20px);
   text-align: center;
-  font-weight: 500;
+  font-weight: 350;
 }
 .app-download-platform {
   display: flex;
@@ -22,13 +22,14 @@
 }
 .app-name {
   color: tomato;
+  padding: 4px;
 }
 .app-store {
   display: flex;
   align-items: center;
   background-color: black;
   color: white;
-  padding: 15px;
+  padding: 10px 15px;
   border-radius: 12px;
   gap: 15px;
   transition: 0.5s;
@@ -37,15 +38,15 @@
 }
 
 .app-p {
-  font-size: small;
+  font-size: 11px;
   color: #808080;
 }
 .app-icon {
-  height: 40px;
-  width: 40px;
+  height: 25px;
+  width: 25px;
 }
 .app-text {
-  font-size: 23px;
+  font-size: 15px;
 }
 .app-store:hover {
   transform: scale(1.05);

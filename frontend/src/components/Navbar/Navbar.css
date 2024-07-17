@@ -3,14 +3,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background-color: white;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .navbar .logo {
   width: 150px;
-  color: tomato;
+  color: #49557e;
   display: flex;
   gap: 10px;
   font-size: small;
@@ -26,7 +26,7 @@
   display: flex;
   list-style: none;
   gap: 20px;
-  color: #49557e;
+  color: tomato;
   font-size: 18px;
 }
 .navbar-right {
@@ -39,8 +39,8 @@
   background: transparent;
   font-size: 16px;
   color: #49557e;
-  border: 1px solid white;
-  padding: 6px 20px;
+  border: 1px solid #49557e;
+  padding: 5px 16px;
   border-radius: 50px;
   cursor: pointer;
   transition: 0.3s;
@@ -50,8 +50,8 @@
 }
 .navbar .active {
   padding-bottom: 2px;
-  color: white;
-  border-bottom: 2px solid #49557e;
+  color: #49557e;
+  border-bottom: 2px solid tomato;
 }
 .navbar li {
   cursor: pointer;
@@ -109,7 +109,7 @@
 .nav-menu-icon {
   width: 25px;
   height: 25px;
-  color: white;
+  color: #49557e;
   cursor: pointer;
 }
 .order-list {

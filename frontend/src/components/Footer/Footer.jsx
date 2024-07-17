@@ -16,9 +16,9 @@ const Footer = () => {
             story. From artisanal cheeses to freshly baked bread, our curated
             selection tantalizes taste buds. Explore global flavors or savor
             local specialties, all sourced with care for quality and freshness.
-            Whether you're a gourmet enthusiast or a casual foodie, our shop is
-            a haven for gastronomic adventures. Come, experience a symphony of
-            flavors at Foody.
+            Whether {`you're`} a gourmet enthusiast or a casual foodie, our shop
+            is a haven for gastronomic adventures. Come, experience a symphony
+            of flavors at Foody.
           </p>
           <div className="footer-social">
             <CiFacebook className="social-icons" />

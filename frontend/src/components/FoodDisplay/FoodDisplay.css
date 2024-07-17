@@ -1,12 +1,11 @@
 .food-display {
   margin-top: 30px;
-  background-color: black;
   padding: 20px;
 }
 .food-display h2 {
   font-size: max(2vw, 24px);
   font-weight: 600;
-  color: white;
+  color: black;
 }
 .food-display-list {
   display: grid;
@@ -14,5 +13,5 @@
   margin-top: 30px;
   gap: 30px;
   row-gap: 50px;
-  color: white;
+  color: black;
 }

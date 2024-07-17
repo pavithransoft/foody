@@ -2,7 +2,7 @@ import { useContext } from "react";
 import "./FoodItem.css";
 import { StoreContext } from "../../context/StoreContext";
 import PropTypes from "prop-types";
-import { CiCirclePlus, CiCircleMinus } from "react-icons/ci";
+import { CiSquarePlus, CiSquareMinus } from "react-icons/ci";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 
 const FoodItem = ({ id, name, price, description, image }) => {
@@ -18,15 +18,15 @@ const FoodItem = ({ id, name, price, description, image }) => {
           alt=" "
         />
         {!cartItems[id] ? (
-          <CiCirclePlus onClick={() => addToCart(id)} className="add" />
+          <CiSquarePlus onClick={() => addToCart(id)} className="add" />
         ) : (
           <div className="food-item-counter">
-            <CiCircleMinus
+            <CiSquareMinus
               onClick={() => removeFromCart(id)}
               className="qua-dec"
             />
-            <p>{cartItems[id]}</p>
-            <CiCirclePlus onClick={() => addToCart(id)} className="qua-inc" />
+            <p className="add-quantity">{cartItems[id]}</p>
+            <CiSquarePlus onClick={() => addToCart(id)} className="qua-inc" />
           </div>
         )}
       </div>

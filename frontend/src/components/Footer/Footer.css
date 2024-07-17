@@ -1,6 +1,6 @@
 .footer {
-  color: #d9d9d9;
-  background-color: black;
+  color: black;
+  background-color: rgb(226 232 240);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,6 +22,7 @@
   flex-direction: column;
   align-items: start;
   gap: 20px;
+  color: rgb(15 23 42);
 }
 .footer-content-left li,
 .footer-content-center li,
@@ -32,7 +33,7 @@
 }
 .footer-content-center h2,
 .footer-content-right h2 {
-  color: white;
+  color: rgb(30 41 59);
 }
 .footer-social-icons img {
   width: 40px;
@@ -57,7 +58,7 @@
 }
 .logo {
   width: 150px;
-  color: tomato;
+  color: #49557e;
   display: flex;
   gap: 10px;
   font-size: medium;
@@ -76,4 +77,12 @@
 .social-icons {
   width: 30px;
   height: 30px;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+.footer-copyright {
+  font-size: 14px;
 }
